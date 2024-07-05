@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar</title>
+</head>
+<body>
+    <div style="width: 75%; margin:auto;">
+        <div style="float:left;">
+            INSTITUTO CERTUS
+        </div> 
+        <div style="float:right;">
+            programacion web - while
+        </div> 
+        <div>
+            <img src="img/banner2.jpg" width="100%" alt="">
+        </div>
+        <div style="text-align:center; color:bisque">
+            TABLA DE MULTIPLICAR
+        </div>
+        <div>
+            <button onclick="multiplicar()">multiplicar</button>
+        </div>
+        <div id="tablaResultado" style="margin-top: 20px;">
+ 
+        </div>
+    </div>
+
+    <script>
+        function multiplicar() {
+            let xn = parseInt(prompt("Ingrese un número para mostrar su tabla de multiplicar: "));
+            
+            if (!isNaN(xn)) {
+                let tabla = "<h3>Tabla del " + xn + "</h3><ul>";
+
+                let i = 1;
+                while (i <= 12) {
+                    tabla += "<li>" + xn + " x " + i + " = " + (xn * i) + "</li>";
+                    i++;
+                }
+
+                tabla += "</ul>";
+
+                document.getElementById("tablaResultado").innerHTML = tabla;
+            } else {
+                alert("Debe ingresar un número válido.");
+            }
+        }
+    </script>
+</body>
+</html>
+

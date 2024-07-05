@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="laboratoria.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cabecera">
+        <div class="contacto-left">
+            INMOBILIARIA CERTUS
+        </div>
+        <div class="contacto-right">
+            atencion@certus.edu.pe
+        </div>
+        <div class="banner">
+            <img src="img/banner2.jpg" width="75%" alt="">
+        </div>
+    </div>
+    <div class="cuerpo">
+        <div id="barra">
+            <p style="text-align: center; margin-bottom: 30px;">Menú principal</p>
+            <ul>
+                <li><a href="#" onclick="mostrarPag('pagina1')">Oficina</a></li>
+                <li><a href="#" onclick="mostrarPag('pagina2')">Multifamiliar</a></li>
+                <li><a href="#" onclick="mostrarPag('pagina3')">Plano de interior</a></li>
+                <li><a href="#" onclick="mostrarPag('pagina4')">Habitación secreta para la amante</a></li>
+                <li><a href="#" onclick="cerrar();">Cerrar sesión</a></li>
+
+            </ul>
+        </div>
+        <div id="contenido">
+            <div id="pagina1" class="pag active">
+                <h1>Plan de Oficina</h1>
+                <p>Capacidad 25 personas</p>
+                <img src="img/oficina.jpg" width="100%" alt="">
+            </div>
+            <div id="pagina2" class="pag">
+                <h1>Modelo multifamiliar</h1>
+                <p>Cocina Dormitorio - Baño - Sala</p>
+                <img src="img/multifamiliar.jpg" width="100%" alt="">
+            </div> 
+            <div id="pagina3" class="pag">
+                <h1>Interior del edificio</h1>
+                <p>Interior amoblado con piscina</p>
+                <img src="img/frontis.jpg" width="100%" alt="">
+            </div>
+            <div id="pagina4" class="pag">
+                <h1>Habitación secreta para la amante</h1>
+                <p>Un lugar escondido y privado</p>
+                <img src="img/secreo.jpg" width="100%" alt="">
+            </div>
+        </div>  
+    </div>
+    <div class="pie">
+        <div style="width: 100%;">
+            <div style="text-align: center;">
+                Autor: Kenneth Sebastián Casas<br>
+                Instituto Certus | Carreras técnicas y educación
+            </div>
+        </div>
+    </div>
+    <script src="laboratorio.js"></script>
+</body>
+</html>

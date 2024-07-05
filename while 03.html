@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while - ejemplo 02</title>
+</head>
+<body>
+    <script>
+        let num; // Variable para almacenar el número ingresado
+        let mayor = Number.MIN_SAFE_INTEGER;
+
+        let k = 1; // Variable contador
+
+        while(k <= 4){
+            num = parseInt(prompt("Ingresar número: "));
+            document.write(num + "<br>");
+            if (num < mayor) {
+                mayor = num; 
+            }
+
+            k++; 
+        }
+
+        document.write("el número mayor es: " + mayor + "");
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacto-left, .contacto-right {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contacto-left {
+    text-align: left;
+}
+
+.contacto-right {
+    text-align: right;
+}
+
+.banner {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cuerpo {
+    display: flex;
+    flex: 1;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#contenido {
+    flex-grow: 1;
+    padding: 20px;
+    width: 100%;
+}
+
+.pag {
+    display: none; 
+}
+
+.pag.active {
+    display: block;
+}
+
+#barra {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+#barra ul {
+    list-style: none;
+    padding: 0;
+}
+
+#barra ul li {
+    margin-bottom: 10px;
+}
+
+#barra ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.pie {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
